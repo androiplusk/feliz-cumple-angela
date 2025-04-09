@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Para Angela! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="welcome-screen" class="screen active">
+        <h1>¡Hola Angela!</h1>
+        <button id="start-button">Toca aquí para una sorpresa ✨</button>
+    </div>
+
+    <div id="birthday-screen" class="screen">
+        <div id="balloons-container"></div>
+        <h1 class="birthday-title">¡Feliz Cumpleaños Angela! 🎉</h1>
+        <p class="birthday-quote">Que cada instante de hoy sea una chispa para tu futuro. Hoy eres una mujer fuerte, y lo vas a seguir logrando tanto... y seguirás caminando con firmeza hacia ese sueño que sigue latiendo en ti.</p>
+        
+        <div class="cake-container">
+            <div class="cake">
+                <div class="candle"></div>
+            </div>
+            <button id="blow-candle">Sopla la vela, Angela ✨</button>
+        </div>
+
+        <div class="envelope-container" style="display: none;">
+            <p class="envelope-instruction">Toca el sobre para abrirlo 💌</p>
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-content"></div>
+            </div>
+        </div>
+
+        <div class="envelope-message">
+            <p class="tap-to-continue">Toca las palabras para descubrir el mensaje completo ✨</p>
+            <p class="message-line" data-order="1">Gracias</p>
+            <p class="message-line" data-order="2">por ser esa persona</p>
+            <p class="message-line" data-order="3">que deja huellas bonitas</p>
+            <p class="message-line" data-order="4">sin siquiera intentarlo.</p>
+            <p class="signature">Con cariño,<br>Juan David Fandiño</p>
+        </div>
+    </div>
+
+    <audio id="blow-sound" src="sounds/Sonido de Soplar 1 - Efecto  de sonido.mp3" preload="auto"></audio>
+    <audio id="confetti-sound" src="sounds/Confetti Party Popper  Free Sound Effect.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
